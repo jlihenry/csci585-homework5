@@ -20,9 +20,9 @@ public class Pond {
 	public void draw(Graphics g) {
 		Color originalColor = g.getColor();
 		g.setColor(Color.black);
-		g.drawArc(x, y, r, r, 0, 360);
+		g.drawArc(x, y, 2*r, 2*r, 0, 360);
 		g.setColor(color);
-		g.fillOval(x, y, r, r);
+		g.fillOval(x, y, 2*r, 2*r);
 		g.setColor(Color.black);
 		g.drawString(id, x, y);
 		g.setColor(originalColor);
